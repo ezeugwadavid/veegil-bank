@@ -1,0 +1,45 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+
+}
+
+.margins{
+    margin: 10% 20%;
+}
+
+h3{
+    color: #119DEF;
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+.btn-color{
+    background-color: #119DEF !important;
+    color: #FFFFFF;
+}
+
+.inputs{
+    border: 1px solid red;
+}
+
+p{
+    color: red;
+}
+
+.showText{
+    display: block;
+}
+.hideText{
+    display: none;
+}
+
+.bottom-text{
+    display: flex;
+    margin-top: 30px;
+}
+
+h5{
+    color: #119DEF;
+}
