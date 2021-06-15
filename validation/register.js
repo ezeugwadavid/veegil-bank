@@ -33,8 +33,8 @@ module.exports = function validateRegisterInput(data){
       errors.phonenumber = 'phonenumber field is required';
     }
 
-    if(!validator.isLength(data.password, {min: 2, max: 30})){ 
-      errors.password = 'password must be at least 2 characters';   
+    if(!validator.isLength(data.password, {min: 2, max: 30})){  
+      errors.password = 'password must be at least 2 characters';     
     }  
 
     return {

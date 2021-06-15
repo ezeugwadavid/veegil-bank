@@ -86,7 +86,7 @@ const Register = (props) => {
     
    
     
-	};
+	};  
   
    
   return (  

@@ -225,9 +225,10 @@ const Header = (props) => {
         <Input type="number" name="amount" id="examplePassword" placeholder="e.g 3000" value={credentials.amount}
             onChange={handleChange} />
         <p className="showText">{errors.amount}</p>
-        
+       
+         
         </div>
-        <Button color="danger" onClick={(e)=>handleDeposit(e)}>Deposit</Button>
+        <Button color="danger" onClick={(e)=>handleDeposit(e)}>Deposit</Button> 
         </FormGroup>
 
           </Col>  
