@@ -124,7 +124,7 @@ const Register = (props) => {
         <Label for="examplePassword">Password</Label>
         <Input className={checkError ? "inputs" : ""} type="password" name="password" id="examplePassword" placeholder="enter your password" value={credentials.password}
             onChange={handleChange} />
-        <p className={checkError ? "showText" : "hideText"}>{error.password}</p>
+        <p className="showText">{errors.password}</p>   
         </div>
 
       </FormGroup>

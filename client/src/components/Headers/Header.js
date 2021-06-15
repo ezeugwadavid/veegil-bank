@@ -25,9 +25,9 @@ import { fundAccount, getDeposits, getWithdrawals, getTransactions, getCurrentAc
 // reactstrap components
 import { Card, CardBody, CardTitle, Container, Row, Col, Modal, ModalHeader, Form, FormGroup, Label, Input, } from "reactstrap";
 import "../../assets/css/auth.css";
-console.log(store.getState());
 
-const Header = (props) => {
+
+const Header = (props) => {  
   
   const [modal, setModal] = useState(false);
   const [depositModal, setDepositModal] = useState(false);
@@ -35,24 +35,20 @@ const Header = (props) => {
   
   
   
+  const dispatch = useDispatch();
   useEffect(() => {
-    //window.location.reload();
     setModal(!modal)
     console.log('effect')
     dispatch(fundAccount());
-     dispatch(getDeposits());
-     dispatch(getCurrentAccount());   
-     dispatch(getTransactions())
-     dispatch(getWithdrawals());    
-       
-     
-     
+    dispatch(getDeposits());
+    dispatch(getCurrentAccount());   
+    dispatch(getTransactions())
+    dispatch(getWithdrawals());      
      
    
 	}, [dispatch]);
 
   
-  const dispatch = useDispatch();
   const transactions = useSelector((state) => state.transactions.transactions);  
   const deposits = useSelector((state) => state.transactions.deposits);
   const account = useSelector((state) => state.transactions.account);    
